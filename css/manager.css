@@ -1,0 +1,35 @@
+/*===============报修列表=================*/
+.repair_list_manager.wrapper{ position:relative; padding-top:1.67rem; }
+.repair_list_manager.wrapper .number{ font-size:0.275rem; }
+.repair_list_manager.wrapper .topbar{ position:fixed; top:0; z-index:2; width:100%; background:#fff;}
+.repair_list_manager.wrapper .topbar .menu{ padding:0.2rem 0.25rem; border-bottom:1px solid #e8e8e8; }
+.repair_list_manager.wrapper .topbar .menu li{ text-align:center; border:1px solid #EFAF26; padding:0.1rem; font-size:0.27rem;}
+.repair_list_manager.wrapper .topbar .menu li:nth-child(1){ border-radius:8px 0 0 8px; }
+.repair_list_manager.wrapper .topbar .menu li:nth-child(2){ border-radius:0 8px 8px 0 ; }
+.repair_list_manager.wrapper .topbar .menu li.active{ color:#fff; background:#EFAF26; }
+.repair_list_manager.wrapper .topbar .tips{ padding:0.15rem 0.25rem; vertical-align:top; }
+.repair_list_manager.wrapper .topbar .tips .number{ margin:0 0.1rem; color:#EFAF26; vertical-align:top; font-size:0.3rem;}
+.repair_list_manager.wrapper .list li{ margin-top:0.15rem; background:#fff; }
+.repair_list_manager.wrapper .list li .title{ border-bottom:1px solid #e8e8e8; padding:0.2rem 0.25rem; overflow:hidden;}
+.repair_list_manager.wrapper .list li .title .leftCon{ float:left; }
+.repair_list_manager.wrapper .list li .title .leftCon .type{ font-size:0.29rem; }
+.repair_list_manager.wrapper .list li .title .leftCon .time{ color:#999; margin-top:0.1rem; }
+.repair_list_manager.wrapper .list li .title .rightCon{ float:right; vertical-align:middle; padding:0.24rem 0; }
+.repair_list_manager.wrapper .list li .infoCon{ padding:0 0.25rem; color:#999; }
+.repair_list_manager.wrapper .list li .infoCon .info{ border-bottom:1px solid #e8e8e8; }
+.repair_list_manager.wrapper .list li .infoCon .info p{ margin:0.2rem 0; }
+.repair_list_manager.wrapper .list li .infoCon .info p .phone{ float:right; }
+.repair_list_manager.wrapper .list li .infoCon .details{ padding:0.35rem 0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-right:40px; }
+
+
+
+/*===============报修详情=================*/
+.repair_details_manager.wrapper{ position:relative; padding-top:0.8rem; }
+.repair_details_manager.wrapper .topbar{ position:fixed; top:0; z-index:2; width:100%; background:#fff; font-size:0.27rem;}
+.repair_details_manager.wrapper .topbar p{ padding:0.2rem 0.25rem; }
+.repair_details_manager.wrapper .topbar p .name{ margin-left:30px; color:#999;}
+.repair_details_manager.wrapper .topbar p .time{ float:right; color:#999; }
+.repair_details_manager.wrapper .main .infoCon{ background:#fff; padding:0.1rem 0.25rem; margin-top:0.15rem; }
+.repair_details_manager.wrapper .main .infoCon p{ margin:0.22rem 0; padding-left:160px; }
+.repair_details_manager.wrapper .main .infoCon p label{ position:absolute; left:0.25rem; font-size:0.27rem; }
+.repair_details_manager.wrapper .main .infoCon p .text{ color:#999; }

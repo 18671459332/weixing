@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>当前受理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/manager.css" />
+</head>
+<body>  
+    <div class="wrapper repair_list_manager">
+    	<div class="topbar">
+    		<ul class="menu flexbox">
+    			<li class="active">未受理</li>
+    			<li>已受理</li>
+    		</ul>
+    		<p class="tips">共<span class="number">2</span>个订单</p>
+    	</div>
+    	<div class="list">
+    		<ul>
+    			<li>
+                    <div class="title">
+                        <div class="leftCon">
+                            <p class="type">居家报修</p>
+                            <p class="time">2016-05 11:42</p>
+                        </div>
+                        <div class="rightCon">
+                            <p>报修单号：<span class="number">201703-0251<span></p>
+                        </div>
+                    </div>
+                    <div class="infoCon">
+                        <div class="info">
+                            <p><span class="name">Leo</span><span class="phone number">13772311079</span></p>
+                            <p><span class="addr">靖江花城-7号楼-3单元-802</span></p>
+                        </div>
+                        <p class="details">卫生间镜前灯偶尔不亮，有时镜前灯开关会卫生间镜前灯偶尔不亮，有时镜前灯开关会</p>
+                    </div>         
+                </li>
+                <li>
+                    <div class="title">
+                        <div class="leftCon">
+                            <p class="type">居家报修</p>
+                            <p class="time">2016-05 11:42</p>
+                        </div>
+                        <div class="rightCon">
+                            <p>报修单号：<span class="number">201703-0251<span></p>
+                        </div>
+                    </div>
+                    <div class="infoCon">
+                        <div class="info">
+                            <p><span class="name">Leo</span><span class="phone number">13772311079</span></p>
+                            <p><span class="addr">靖江花城-7号楼-3单元-802</span></p>
+                        </div>
+                        <p class="details">卫生间镜前灯偶尔不亮，有时开光镜前灯会卫生间镜前灯偶尔不亮，有时开光镜前灯会</p>
+                    </div>         
+                </li>
+                <li>
+                    <div class="title">
+                        <div class="leftCon">
+                            <p class="type">居家报修</p>
+                            <p class="time">2016-05 11:42</p>
+                        </div>
+                        <div class="rightCon">
+                            <p>报修单号：<span class="number">201703-0251<span></p>
+                        </div>
+                    </div>
+                    <div class="infoCon">
+                        <div class="info">
+                            <p><span class="name">Leo</span><span class="phone number">13772311079</span></p>
+                            <p><span class="addr">靖江花城-7号楼-3单元-802</span></p>
+                        </div>
+                        <p class="details">卫生间镜前灯偶尔不亮，有时开光镜前灯会卫生间镜前灯偶尔不亮，有时开光镜前灯会</p>
+                    </div>         
+                </li>
+    		</ul>
+    	</div>
+    </div>
+</body>
+<script type="text/javascript" src="../plugin/rem.js"></script>
+<script type="text/javascript" src="../plugin/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".topbar li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    })
+</script>
+</html>
