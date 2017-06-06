@@ -77,4 +77,17 @@ a { text-decoration:none; color:#000; }
 	-moz-osx-font-smoothing: grayscale;
 }
 .iconfont:before { vertical-align:-10%; }
+
+
+/* ================================================================================================ */
+.framepage  { position:relative; box-sizing:border-box; border:0px solid #f00; }
+.wrapper    { position:relative; width:100%; box-sizing:border-box;  border:0px solid #f00; }
+
+
+.topbar { position:fixed; width:100%; z-index:100; box-sizing:border-box; }
+.topbar:after { display:block; content:""; width:100%; height:1px; position:absolute; left:0; bottom:0; z-index:5; background:#ddd; -webkit-transform:scale(1,0.5); }
+
+.footer{ position:fixed; bottom:0; padding:0.15rem 0.25rem; width:100%; z-index:2; background:#fff;}
+.footer .btn{ background:#EEB125; color:#fff; display:block; height:0.8rem; line-height:0.8rem; text-align:center; border-radius:8px; font-size:0.28rem;}
+
  
