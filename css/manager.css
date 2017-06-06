@@ -57,3 +57,11 @@
 .repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .time{ color:#999;border-bottom:1px solid #e8e8e8; padding:0.2rem 0; }
 .repair_details_manager .wrapper .main .commentAdd{ background:#fff; margin-top:0.15rem; padding:0.25rem;  }
 .repair_details_manager .wrapper .main .commentAdd .commentBtn{ border:1px solid #e8e8e8; display:block; padding:0.1rem 0.25rem; color:#999; border-radius:8px;}
+
+
+/*===============发布评论=================*/
+.comment_form_manager{ padding-top:0.9rem; }
+.comment_form_manager .topbar{ background:#fff; top:0; }
+.comment_form_manager .topbar .hd-title{ font-size:0.31rem; padding:0.2rem 0.25rem; text-align:center; }
+.comment_form_manager .topbar a.cancelBtn{ font-size:0.27rem; float:left; }
+.comment_form_manager .topbar a.confirmBtn{ font-size:0.27rem; float:right; color:#EEB125;}
