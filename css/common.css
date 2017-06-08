@@ -20,6 +20,7 @@ body {
 
 li { list-style-type:none; }
 a { text-decoration:none; color:#000; }
+.btn{ background:#EEB125; color:#fff; display:block; height:0.8rem; line-height:0.8rem; text-align:center; border-radius:8px; font-size:0.28rem;}
 .btn:active{ opacity: 0.6; }
 .hide{ display:none; }
 .flex-wrap{display: -webkit-box;display:-webkit-flex;display: flex; }
@@ -80,7 +81,7 @@ a { text-decoration:none; color:#000; }
 
 
 /* ================================================================================================ */
-.framepage  { position:relative; box-sizing:border-box; border:0px solid #f00; }
+.framepage  { position:relative; box-sizing:border-box; border:0px solid #f00; height:100%; }
 .wrapper    { position:relative; width:100%; box-sizing:border-box;  border:0px solid #f00; }
 
 

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发起报修</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/manager.css" />
+</head>
+<body>  
+    <div class="framepage repair_add_manager">
+
+      <div class="wrapper">
+        <div class="form">
+              <div class="infoCon">
+                <p class="username"><label>报修人</label><input type="text" placeholder="请填写报修人姓名" /></p>
+                <p class="contact"><label>联系人</label><input type="text" placeholder="请填写房源联系人" /></p>
+                <p class="phone"><label>手机号</label><input type="text" placeholder="请填写手机号" /></p>
+                <p class="addr"><label>报修地址</label><a href="">请选择</a></p>
+                <p class="type"><label>报修类型</label><select><option>请选择</option></select></p>
+                <p class="category"><label>报修分类</label><select><option>请选择</option></select></p>
+              </div>
+              <div class="details">
+                <p class="slide"><label>报修详情</label></p>
+                <textarea placeholder="请输入您的报修需求（最多200字）"></textarea>
+                <div class="imgCon">
+                     <img src="../img/info_img.png" /> 
+                     <img src="../img/add.png" />      
+                </div>
+              </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <a class="btn confirmBtn">提交报修</a>
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".confirmBtn").click(function(){ 
+            layer.msg('您的信息已经成功提交');
+        });
+    })
+</script>
+</html>

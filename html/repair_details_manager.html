@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   	<meta charset="UTF-8">
-  	<title>当前受理</title>
+  	<title>报修详情</title>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
   	<link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../css/manager.css" />
@@ -60,7 +60,49 @@
                   </div>
               </div>
               <div class="commentAdd">
-                  <a class="commentBtn">点击发表评论</a>
+                  <a href="comment_form_manager.html" class="commentBtn">点击发表评论</a>
+              </div>
+
+              <div class="evaluation">
+                 <p><label>评价详情</label></p> 
+<!--             <div class="empty">暂无评价</div> -->
+                 <div class="evaluationContent">
+                   <div class="total">
+                     <p>您的本次评价为：<span class="type">好评</span></p>
+                   </div>
+                   <ul class="category">
+                     <li>维修质量                        
+                        <span class="star">
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon"></label>
+                        </span>
+                     </li>
+                     <li>维修速度
+                        <span class="star">
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon"></label>
+                        </span>
+                     </li>
+                     <li>服务态度
+                        <span class="star">
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon active"></label>
+                            <label class="icon"></label>
+                        </span>
+                     </li>
+                   </ul>
+                   <div class="content">
+                     <p>谢谢王师傅的帮助，现在所有问题已经解决。</p>
+                   </div>
+                 </div>
               </div>
       	</div>
       </div>
@@ -70,24 +112,22 @@
       </div>
     </div>
 </body>
-<script type="text/javascript" src="../plugin/rem.js"></script>
-<script type="text/javascript" src="../plugin/jquery.js"></script>
-<script type="text/javascript" src="../plugin/layer/layer.js"></script>
 <script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
 <script>
     $(document).ready(function(){
         $(".completeBtn").on("click",function(){
           layer.confirm('确定此次维修已经完成吗？',function(){
-            layer.msg('维修完成!');
+            layer.msg('维修完成');
           })
         })
 
         $(".slide").on("click",function(){
           var text = $(this).find(".slideBtn").text();
           if(text=='收起'){
-             $(this).find(".slideBtn").text('展开')
+             $(this).find(".slideBtn").text('展开').removeClass('down')
           }else{
-             $(this).find(".slideBtn").text('收起')
+             $(this).find(".slideBtn").text('收起').addClass('down');
           }
           $(this).next().toggleClass("hide");
         })

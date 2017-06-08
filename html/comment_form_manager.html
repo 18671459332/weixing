@@ -8,26 +8,52 @@
 </head>
 <body>  
     <div class="framepage comment_form_manager">
-    
-        <div class="topbar">
-            <div class="hd-title"><a class="cancelBtn">取消</a>发布评论<a class="confirmBtn">发送</a></div>
-        </div>
-
         <div class="wrapper">
+            <div class="bar">
+                <div class="hd-title"><a class="cancelBtn">取消</a>发布评论<a class="confirmBtn">发送</a></div>
+            </div>
             <div class="form">
-                <textarea class="content"></textarea> 
-                <div class="imgCon"></div>
-                <div class="btnCon"><a class="commentBtn">发表评论</a></div>
+                <textarea class="content" placeholder="请发表您的评论（200字以内）"></textarea> 
+                <div class="imgCon">
+                    <img src="../img/info_img.png"/>
+                    <img src="../img/info_img.png"/>
+                    <img class="imgAdd" src="../img/add.png" />
+                </div>
+                <div class="btnCon">
+                    <a class="commentBtn btn">
+                      <select class="set_contentText">
+                         <option>请选择</option>
+                         <option>此订单已受理，我们立即安排！</option>
+                         <option>报修完成！</option>
+                      </select>
+                      选择常用语
+                    </a>
+                </div>
+
+
             </div>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../plugin/rem.js"></script>
-<script type="text/javascript" src="../plugin/jquery.js"></script>
 <script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
 <script>
     $(document).ready(function(){
+        $(".confirmBtn").click(function(){ 
+            layer.msg('发布成功');
+        });
 
+        $(".cancelBtn").click(function(){ 
+            layer.confirm('信息未保存，确认退出吗？',function(){
+                history.back();
+            })
+        });
+
+        $(".set_contentText").on("change",function(){
+            var text = $(this).find("option:selected").text();
+            if(text == "请选择") return;
+            $(".content").text(text);
+        })
     })
 </script>
 </html>
