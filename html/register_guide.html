@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+</head>
+<body>  
+    <div class="framepage register_guide">
+        <div class="wrapper">
+            <div class="topCon">
+                <img class="banner" src="../img/banner.jpg" />
+                <img class="logo" src="../img/logo.png">
+            </div>
+            <div class="main">
+                <p class="title">请选择您的身份</p>
+                <ul class="role_list">
+                    <li class="active">
+                        <img src="../img/visitor.png" />
+                        <p class="role">我是游客</p>
+                        <p>我想成为星家人</p>
+                    </li>
+                    <li>
+                        <img src="../img/owner.png" />
+                        <p class="role">我是业主</p>
+                        <p>我在体验星家人</p>
+                    </li>
+                    <li>
+                        <img src="../img/renter.png" />
+                        <p class="role">我是租客</p>
+                        <p>我在享受星家人</p>
+                    </li>
+                </ul>
+
+                <a class="btn nextBtn" href="register_info.html">下一步</a>
+                <div class="bottomCon">
+                    <p class="note">注册即表示您同意我们的<a href="register_protocol.html">伟星星家人入会协议</a></p>
+                    <p class="tip">业主包括业主本人、家属、业主身份可享受更多的便捷服务</p>
+                    <p class="contact"><span>客服专线：85939955</span><span>客服QQ：2122782005</span></p>
+                </div>
+                
+            </div>
+
+        <div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".role_list li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+
+    })
+</script>
+</html> 

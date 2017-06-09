@@ -1,0 +1,110 @@
+
+/*==================用户注册==================*/
+.register_guide .wrapper { background:#fff; }
+.register_guide .topCon{ position:relative; }
+.register_guide .topCon img.banner{ display:block; width:100%;}
+.register_guide .topCon img.logo{ display:block; position:absolute; width:2rem; height:2rem; bottom:-1rem; left:50%; margin-left:-1rem;}
+
+.register_guide .main{ padding:0.6rem 0.5rem; margin-top:1rem ;}
+.register_guide .main p.title{ text-align:center; color:#EEB125; font-size:0.3rem;  }
+.register_guide .main .role_list li{ border-radius:8px; background:#edeaea; border-radius:15px; margin-top:0.4rem; position:relative; padding:0.6rem 0.5rem 0.6rem 2.2rem; height:2.2rem; position:relative;} 
+.register_guide .main .role_list li img{ position:absolute; width:2.2rem; height:2.2rem; left:0; top:0;}
+.register_guide .main .role_list li .role{ font-size:0.32rem; font-weight:bold; margin-bottom:0.1rem; }
+.register_guide .main .role_list li:after{ font:0.45rem/0.8rem 'iconfont'; content:'\e642'; margin-right:0.15rem; position:absolute; right:0.5rem; top:0.6rem; color:#999; }
+.register_guide .main .role_list li.active:after{ color:#EEB125; }
+.register_guide .main .nextBtn{ margin:0.7rem 0 0.4rem 0; }
+.register_guide .main .bottomCon p.note{ color:#444; font-size:0.25rem; margin-bottom:0.15rem; }
+.register_guide .main .bottomCon p.note a{ color:#EEB125; margin-left:0.15rem; }
+.register_guide .main .bottomCon p{ color:#999; font-size:0.22rem; margin-bottom:0.1rem; }
+
+/*==================会员协议==================*/
+.register_protocol .wrapper{ padding: 0.2rem; }
+.register_protocol .wrapper .article{ background:#fff; padding: 0.25rem; padding-bottom:1.8rem;}
+.register_protocol .wrapper h3{ color:#EEB125; text-align:center; padding:0.25rem 0; }
+.register_protocol .wrapper h4{ margin-top:0.3rem; }
+.register_protocol .wrapper p{ color:#333; margin:0.05rem 0;}
+.register_protocol .footer .tip{ font-size:0.24rem; padding:0.15rem 0;}
+.register_protocol .footer .tip:before{ font:0.26rem/0.24rem 'iconfont'; content:'\e639'; margin:0 0.1rem; color:#6ab352; }
+
+
+/*==================游客 注册信息填写==================*/
+.register_info_visitor{ background:#fff; }
+.register_info_visitor .wrapper { background:#fff; }
+.register_info_visitor .topCon img.banner{ display:block; width:100%;}
+.register_info_visitor .form{ padding:0.4rem 0.5rem; }
+.register_info_visitor .form > div{ padding:0.2rem 0; }
+.register_info_visitor .form > div > div{ padding: 0 0.15rem; height:0.7rem; line-height:0.7rem; }
+.register_info_visitor .form > div > div.inputBox{ border:1px solid #ccc; border-radius:8px; padding:0.1rem 0.25rem; position:relative; padding-left:0.6rem; }
+.register_info_visitor .form > div.itemOne > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e70f'; left:0.15rem; color:#ccc; }
+.register_info_visitor .form > div.itemTwo > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e608'; left:0.15rem; color:#ccc; }
+.register_info_visitor .form > div.itemThree > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e600'; left:0.15rem; color:#ccc; }
+.register_info_visitor .form > div > div.inputBox input{ height:0.5rem; line-height:0.5rem; width:100%; }
+
+.register_info_visitor .form > div > .gender{ margin-left:0.2rem; width:2.5rem;}
+.register_info_visitor .form > div > .gender label:before{ font:0.26rem/0.26rem 'iconfont'; content:'\e6be'; margin:0 0.1rem 0 0.15rem; color:#63aeff;  }
+.register_info_visitor .form > div > .gender label.active:before{  content:'\e636'; }
+.register_info_visitor .form > div > .yzmBtn{ height:0.7rem; line-height:0.7rem; background:#EEB125; color:#fff; display:block; border-radius:8px; padding:0 0.2rem; margin-left:0.2rem;  }
+.register_info_visitor .form > div > .yzmBtn:active{ opacity:0.6; }
+.register_info_visitor .form  .submitBtn{ margin-top:0.8rem; }
+
+
+/*==================租客 注册信息填写==================*/
+.register_info_renter{ background:#fff; }
+.register_info_renter .wrapper { background:#fff; }
+.register_info_renter .topCon img.banner{ display:block; width:100%;}
+.register_info_renter .form{ padding:0.4rem 0.5rem; }
+.register_info_renter .form > div{ padding:0.2rem 0; }
+.register_info_renter .form > div > div{ padding: 0 0.15rem; height:0.7rem; line-height:0.7rem; }
+.register_info_renter .form > div > div.inputBox{ border:1px solid #ccc; border-radius:8px; padding:0.1rem 0.25rem; position:relative; padding-left:0.6rem; }
+.register_info_renter .form > div > div.selectBox{ border:1px solid #ccc; border-radius:8px; padding:0.1rem 0.25rem; position:relative; padding-left:0.25rem; padding-right:0.6rem;}
+.register_info_renter .form > div > div.selectBox:after{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e621'; right:0.25rem; color:#999; top:0.1rem; }
+
+
+.register_info_renter .form > div.itemOne > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e70f'; left:0.15rem; color:#ccc; }
+.register_info_renter .form > div.itemTwo > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e608'; left:0.15rem; color:#ccc; }
+.register_info_renter .form > div.itemThree > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e600'; left:0.15rem; color:#ccc; }
+.register_info_renter .form > div > div.inputBox input{ height:0.5rem; line-height:0.5rem; width:100%; }
+.register_info_renter .form > div > div.selectBox select{ height:0.5rem; line-height:0.5rem; width:100%; color:#999; }
+
+.register_info_renter .form > div > .gender{ margin-left:0.2rem; width:2.5rem;}
+.register_info_renter .form > div > .gender label:before{ font:0.26rem/0.26rem 'iconfont'; content:'\e6be'; margin:0 0.1rem 0 0.15rem; color:#63aeff;  }
+.register_info_renter .form > div > .gender label.active:before{  content:'\e636'; }
+.register_info_renter .form > div > .yzmBtn{ height:0.7rem; line-height:0.7rem; background:#EEB125; color:#fff; display:block; border-radius:8px; padding:0 0.2rem; margin-left:0.2rem;  }
+.register_info_renter .form > div > .yzmBtn:active{ opacity:0.6; }
+.register_info_renter .form  .submitBtn{ margin-top:0.8rem; }
+
+.register_info_renter .form h3{ font-size:0.28rem; color:#333; margin-bottom:0.15rem;}
+.register_info_renter .form > div.itemThree{ margin-bottom:0.4rem;  }
+
+
+/*==================业主 注册信息填写==================*/
+.register_info_owner{ background:#fff; }
+.register_info_owner .wrapper { background:#fff; }
+.register_info_owner .topCon img.banner{ display:block; width:100%;}
+.register_info_owner .form{ padding:0.4rem 0.5rem; }
+.register_info_owner .form > div{ padding:0.2rem 0; }
+.register_info_owner .form > div > div{ padding: 0 0.15rem; height:0.7rem; line-height:0.7rem; }
+.register_info_owner .form > div > div.inputBox{ border:1px solid #ccc; border-radius:8px; padding:0.1rem 0.25rem; position:relative; padding-left:0.6rem; }
+.register_info_owner .form > div.itemOne > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e70f'; left:0.15rem; color:#ccc; }
+.register_info_owner .form > div.itemTwo > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e608'; left:0.15rem; color:#ccc; }
+.register_info_owner .form > div.itemThree > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e600'; left:0.15rem; color:#ccc; }
+.register_info_owner .form > div > div.inputBox input{ height:0.5rem; line-height:0.5rem; width:100%; }
+
+.register_info_owner .form > div > .gender{ margin-left:0.2rem; width:2.5rem;}
+.register_info_owner .form > div > .gender label:before{ font:0.26rem/0.26rem 'iconfont'; content:'\e6be'; margin:0 0.1rem 0 0.15rem; color:#63aeff;  }
+.register_info_owner .form > div > .gender label.active:before{  content:'\e636'; }
+.register_info_owner .form > div > .yzmBtn{ height:0.7rem; line-height:0.7rem; background:#EEB125; color:#fff; display:block; border-radius:8px; padding:0 0.2rem; margin-left:0.2rem;  }
+.register_info_owner .form > div > .yzmBtn:active{ opacity:0.6; }
+.register_info_owner .form  .submitBtn{ margin-top:0.8rem; }
+
+
+
+/*==================注册扫描二维码=================*/
+.register_scan{ background:#fff; }
+.register_scan .wrapper{ background:#fff; }
+.register_scan .topCon{ position:relative; }
+.register_scan .topCon img.banner{ display:block; width:100%;}
+.register_scan .topCon img.qrcode{ display:block; position:absolute; width:2.4rem; height:2.4rem; bottom:-1.2rem; left:50%; margin-left:-1.2rem;}
+.register_scan .tip{ padding:0.6rem 0.5rem; margin-top:1rem ; text-align:center; font-size:0.27rem;}
+
+

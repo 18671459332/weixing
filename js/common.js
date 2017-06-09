@@ -24,6 +24,6 @@ $(document).ready(function(){
 	
 	// 伪类 :active
 	document.body.addEventListener('touchstart',function(){ });
+    
 
-	
 });

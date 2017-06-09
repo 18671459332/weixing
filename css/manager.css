@@ -108,22 +108,27 @@
 
 /*===============发起报修=================*/
 .repair_add_manager .wrapper{ padding-bottom:1.1rem; }
-.repair_add_manager .wrapper .form .infoCon > p{ padding:0 0.25rem; background:#fff;  padding-left:2rem;}
-.repair_add_manager .wrapper .form .infoCon > p.username{ margin-bottom:0.15rem; }
-.repair_add_manager .wrapper .form .infoCon > p.username label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e696'; margin-right:0.15rem; color:#999; }
-.repair_add_manager .wrapper .form .infoCon > p.contact label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e611'; margin-right:0.15rem; color:#999; }
-.repair_add_manager .wrapper .form .infoCon > p.phone label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e611'; margin-right:0.15rem; color:#999; }
-.repair_add_manager .wrapper .form .infoCon > p.addr label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e62a'; margin-right:0.15rem; color:#999; }
-.repair_add_manager .wrapper .form .infoCon > p.type label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e643'; margin-right:0.15rem; color:#999; }
-.repair_add_manager .wrapper .form .infoCon > p.category label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e649'; margin-right:0.15rem; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div{ padding:0 0.25rem; background:#fff;  padding-left:2rem; position:relative;}
+.repair_add_manager .wrapper .form .infoCon > div.username{ margin-bottom:0.15rem; }
+.repair_add_manager .wrapper .form .infoCon > div.username label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e696'; margin-right:0.15rem; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div.contact label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e627'; margin-right:0.15rem; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div.phone label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e611'; margin-right:0.15rem; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div.addr label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e62a'; margin-right:0.15rem; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div.type label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e643'; margin-right:0.15rem; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div.category label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e649'; margin-right:0.15rem; color:#999; }
 
+.repair_add_manager .wrapper .form .infoCon > div.addr p:after{ font:0.30rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:0.25rem; top:0.26rem}
+.repair_add_manager .wrapper .form .infoCon > div.type p:after{ font:0.30rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:0.25rem; top:0.26rem;}
+.repair_add_manager .wrapper .form .infoCon > div.category p:after{ font:0.30rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:0.25rem; top:0.26rem;}
 
-.repair_add_manager .wrapper .form .infoCon > p label{ position:absolute; padding:0.25rem 0; left:0.25rem; font-size:0.27rem; }
-.repair_add_manager .wrapper .form .infoCon > p input{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999;}
-.repair_add_manager .wrapper .form .infoCon > p select{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999;}
-.repair_add_manager .wrapper .form .infoCon > p a{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999;}
-.repair_add_manager .wrapper .form .infoCon > p:first-child input{ border:none; }
-.repair_add_manager .wrapper .form .infoCon > p:last-child select{ border:none; }
+.repair_add_manager .wrapper .form .infoCon > div label{ position:absolute; padding:0.25rem 0; left:0.25rem; font-size:0.27rem; }
+.repair_add_manager .wrapper .form .infoCon > div p{ padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div input{ display:inline-block; width:100%; }
+.repair_add_manager .wrapper .form .infoCon > div select{ display:inline-block; width:100%; }
+.repair_add_manager .wrapper .form .infoCon > div a{ display:inline-block; width:100%; color:#999; }
+.repair_add_manager .wrapper .form .infoCon > div:first-child p{ border:none; }
+.repair_add_manager .wrapper .form .infoCon > div:last-child p{ border:none; }
+
 .repair_add_manager .wrapper .form .details{ padding:0.1rem 0.25rem; margin-top:0.15rem; background:#fff; }
 .repair_add_manager .wrapper .form .details p { padding:0.1rem 0; font-size:0.28rem; }
 .repair_add_manager .wrapper .form .details textarea{ padding:0.2rem; width:100%; height:2.8rem; color:#999;}
@@ -133,9 +138,9 @@
 
 /*===============选择地址=================*/
 .repair_addr_manager .wrapper{ padding-bottom:1.1rem; }
-.repair_addr_manager .wrapper .form .infoCon > p{ padding:0 0.25rem; background:#fff;  padding-left:1.6rem;}
+.repair_addr_manager .wrapper .form .infoCon > p{ padding:0 0.25rem; background:#fff;  padding-left:1.6rem; padding-right:0.7rem; position:relative;}
 .repair_addr_manager .wrapper .form .infoCon > p label{ position:absolute; padding:0.25rem 0; left:0.25rem; font-size:0.27rem; }
 .repair_addr_manager .wrapper .form .infoCon > p input{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999;}
-.repair_addr_manager .wrapper .form .infoCon > p select{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999;}
-.repair_addr_manager .wrapper .form .infoCon > p a{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999;}
+.repair_addr_manager .wrapper .form .infoCon > p select{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999; outline:none; }
+.repair_addr_manager .wrapper .form .infoCon > p:after{ font:0.30rem/0.8rem 'iconfont'; content:'\e621';  color:#999; position:absolute; right:0.25rem;}
 .repair_addr_manager .wrapper .form .infoCon > p:last-child select{ border:none; }
