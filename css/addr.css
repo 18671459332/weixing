@@ -1,0 +1,47 @@
+/*===============地址列表 我的房源=================*/
+.addr_list .wrapper .list li{ padding:0.25rem 0.25rem 0 0.25rem; background:#fff; margin-bottom:0.2rem;}
+.addr_list .wrapper .list li p.name{ font-size:0.3rem/0.3rem; color:#000;} 
+.addr_list .wrapper .list li p.addr{  padding:0.15rem 0; color:#999; }
+.addr_list .wrapper .list li p.handle{ border-top:1px solid #e8e8e8; padding:0.2rem 0; }
+.addr_list .wrapper .list li p.handle .default{ color:#999;  }
+.addr_list .wrapper .list li p.handle .default:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e6be'; margin-right:0.15rem; }
+.addr_list .wrapper .list li p.handle .default.active:before{ content:'\e642'; color:#EEB125; }
+.addr_list .wrapper .list li p.handle .btnGroup{ float:right;  }
+.addr_list .wrapper .list li p.handle .btnGroup a{ color:#999; margin-left:0.3rem; }
+.addr_list .wrapper .list li p.handle .btnGroup a:active{ opacity:0.6; }
+.addr_list .wrapper .list li p.handle .btnGroup a.editBtn:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e60a'; margin-right:0.1rem;}
+.addr_list .wrapper .list li p.handle .btnGroup a.delBtn:before{ font:0.28rem/0.27rem 'iconfont'; content:'\e8c0'; margin-right:0.1rem;}
+
+
+
+/*===============添加/编辑 地址=================*/
+.addr_add .wrapper{ padding:0.25rem 0.25rem 1.1rem 0.25rem; }
+.addr_add .wrapper .form{ padding:0.3rem; background:#fff;}
+.addr_add .wrapper .form .infoCon > p{ padding:0 0.25rem;  padding-left:1.6rem; padding-right:0.7rem; position:relative; border:1px solid #e8e8e8; margin-bottom:0.25rem; border-radius:8px;}
+.addr_add .wrapper .form .infoCon > p label{ position:absolute; padding:0.15rem 0; left:0.25rem; font-size:0.27rem; }
+.addr_add .wrapper .form .infoCon > p input{ display:inline-block; width:100%; padding:0.15rem 0; color:#999;}
+.addr_add .wrapper .form .infoCon > p select{ display:inline-block; width:100%; padding:0.15rem 0; color:#999; outline:none; }
+.addr_add .wrapper .form .infoCon > p:after{ font:0.30rem/0.7rem 'iconfont'; content:'\e621';  color:#999; position:absolute; right:0.25rem; top:0;}
+.addr_add .wrapper .form .infoCon > p:last-child select{ border:none; }
+.addr_add .wrapper .form .set{ padding-bottom:0.3rem; }
+.addr_add .wrapper .form .set .tip{ margin-top:0.3rem; color:#EEB125; }
+.addr_add .wrapper .form .set .tip:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e6be'; margin-right:0.15rem; color:#999;}
+.addr_add .wrapper .form .set .tip.active:before{ content:'\e642'; color:#EEB125; }
+
+
+/*===============房下有谁=================*/
+.addr_relate .wrapper{padding:0 0.25rem 0.5rem 0.25rem;}
+.addr_relate .wrapper .topCon{ background:#fff; padding:0.4rem 0.25rem; text-align:center; }
+.addr_relate .wrapper .topCon p{ color:#EEB125; font-size:0.3rem; }
+.addr_relate .wrapper .topCon .editBtn{ height:0.6rem; line-height:0.6rem; margin-top:0.3rem; }
+.addr_relate .wrapper .list li{ background:#fff; border-radius:10px; border:1px solid #e8e8e8; margin-top:0.3rem; }
+.addr_relate .wrapper .list li > p{ padding:0.15rem 0; }
+.addr_relate .wrapper .list li > p.title{ border-bottom:1px solid #e8e8e8; position:relative; padding:0 0 0 0.8rem; height:0.8rem; line-height:0.8rem;}
+.addr_relate .wrapper .list li > p.title img{ position:absolute; left:0.2rem; top:0.2rem; height:0.4rem; width:0.4rem; } 
+.addr_relate .wrapper .list li .person p{ margin:0.25rem 0; padding-left:1.2rem; position:relative; height:0.7rem; line-height:0.7rem; }
+.addr_relate .wrapper .list li .person p img.avatar{ height:0.7rem; width:0.7rem; border-radius:100%; position:absolute; left:0.25rem; top:0; }
+.addr_relate .wrapper .list li .person p a.complainBtn{ color:#fff; background:#EEB125; float:right; display:block; height:0.4rem; line-height:0.4rem; padding:0 0.2rem; border-radius:3px; margin-top:0.15rem; margin-right:0.25rem;}
+.addr_relate .wrapper .list li .person p a.complainBtn:active{ opacity:0.6; }
+.addr_relate .wrapper .list li .person p span.name{ float:left; display:inline-block; width:1.5rem; text-align:center;}
+.addr_relate .wrapper .list li .person p span.role{ float:left; color:#59AF59; display:inline-block; width:1rem; text-align:center; }
+.addr_relate .wrapper .list li .person p span.owner{ color:#EEB125; }

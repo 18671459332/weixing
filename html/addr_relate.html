@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的房源</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/addr.css" />
+</head>
+<body>  
+    <div class="framepage addr_relate">
+        <div class="wrapper">
+            <div class="topCon">
+                <p>看看房下有谁</p>
+                <a href="addr_edit.html" class="editBtn btn">编辑房源</a>
+            </div>
+            <ul class="list">
+                <li>
+                    <p class="title"><img class="fang" src="../img/1504.png" />晋江花城-7号楼-3单元-802</p>
+                    <div class="person">
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role owner">业主</span></p>
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role">租客</span><a class="complainBtn">投诉</a></p>
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role">租客</span><a class="complainBtn">投诉</a></p>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><img class="fang" src="../img/1504.png" />晋江花城-7号楼-3单元-802</p>
+                    <div class="person">
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role owner">业主</span></p>
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role">租客</span><a class="complainBtn">投诉</a></p>
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role">租客</span><a class="complainBtn">投诉</a></p>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><img class="fang" src="../img/1504.png" />晋江花城-7号楼-3单元-802</p>
+                    <div class="person">
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role owner">业主</span></p>
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role">租客</span><a class="complainBtn">投诉</a></p>
+                        <p><img class="avatar" src="../img/avatar_def.jpg" /><span class="name">kitty</span><span class="role">租客</span><a class="complainBtn">投诉</a></p>
+                    </div>
+                </li>
+            </ul>
+        <div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".complainBtn").on("click",function(){
+            layer.confirm('确定对该用户的信息进行投诉吗',function(){
+                layer.msg('投诉成功，我们会在24小时之内与您取得联系');
+            })
+        })
+    })
+</script>
+</html> 

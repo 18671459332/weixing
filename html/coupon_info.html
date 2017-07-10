@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../plugin/swiper/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/coupon.css" />
+</head>
+<body>  
+    <div class="framepage coupon_info">
+        <div class="wrapper">
+            <div class="topCon">
+                <div class="swiper-container banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/info_banner.jpg" /></div>
+                        <div class="swiper-slide"><img src="../img/info_banner.jpg" /></div>
+                    </div>
+                    <div class="swiper-pagination p1"></div>
+                </div>
+                <p class="name">
+                   <img src="../img/coupon_img.png" />
+                   <label>H&M(名品广场店)</label>
+                </p>
+                <p class="tip">
+                    <span class="value">￥20优惠券</span>
+                    <span class="desp">优惠区间：4月30日至9月30日</span>
+                </p>
+            </div>
+            <div class="shopper">
+                <p class="title">
+                    <img src="../img/0731.png" />商家信息
+                </p>
+                <p class="tel">13526364582</p>
+                <p class="addr">杭州市西湖区银泰城3楼1211号</p>
+                <p class="intro">H&M的设计团队始终以最优价格为所有顾客服务。</p>
+            </div>
+            <div class="instruct">
+                <p class="title">
+                    <img src="../img/0732.png" />领取须知
+                </p>
+                <p class="textTitle">优惠条件</p>
+                <p>领取该券需凭100积分</p>
+                <p class="textTitle">不可用日期</p>
+                <p>法定节假日不可使用</p>
+                <p class="textTitle">使用规则</p>
+                <p>无须预约，消费高峰时可能需要等位</p>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="btn getBtn">领取此券</a>
+         </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../plugin/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+     //轮播图
+    swiper = new Swiper(".banner",{
+            loop:true,
+            autoplay:4000,
+            pagination:".p1",
+            preloadImages:false,
+            lazyLoading:true
+    });
+</script>
+</html> 

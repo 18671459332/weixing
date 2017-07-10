@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/points.css" />
+</head>
+<body>  
+    <div class="framepage points_item_info">
+        <div class="wrapper">
+            <div class="topCon">
+                <img class="banner" src="../img/info_ban.jpg">
+                <p class="name">《名车志》半年度订阅</p>
+                <p><span class="num">2250</span>积分</p>
+                <p class="tip">市场参考价：99.00元</p>
+            </div>
+            <p class="title">商品描述</p>
+            <div class="info">
+            	<p>周期：月刊</p>
+            	<p>规格：册</p>
+            	<p>配送范围：中国大陆地区</p>
+            </div>
+            <div class="details">
+            	<img src="../img/info.jpg" />
+            </div>
+        <div>
+        <div class="footer">
+        	<label><span class="tag">单价:</span><span class="num">2250</span>积分</label>
+        	<a class="exchangeBtn btn">我要兑换</a>
+        </div>
+
+        <div class="panel">
+             <div class="hd-panel">
+                 <p class="title"><a class="closePanel"></a>购买数量</p>
+             </div>
+             <div class="main-panel">
+                <p><a class="decrease"></a><input type="tel" class="item_number" type="text" value="1" /><a class="increase"></a></p>
+             </div>
+             <div class="ft-panel">
+                <label><span class="tag">单价:</span><span class="num">2250</span>积分</label>
+                <a href="points_order.html" class="confirmBtn btn">确定</a>
+             </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        //购买信息面板
+        $("body").append("<div class='hf_overlay'></div>");
+        $(".hf_overlay").click(function(){ Close(); });         
+        $(".exchangeBtn").on("click",function(){
+              Open("panel");  
+        })
+
+        $(".closePanel").click(function(){ Close(); }); 
+
+        $(".increase").on("click",function(){
+           var item_number=parseInt($(".item_number").val());
+           $(".item_number").val(item_number+1)
+
+        })
+
+        $(".decrease").on("click",function(){
+           var item_number=parseInt($(".item_number").val());
+           if(item_number==0){
+               layer.msg('兑换数量为0');
+               return;
+           }
+           $(".item_number").val(item_number-1)
+        })
+
+
+
+
+        Open = function(panel)
+        {
+          $(".hf_overlay").css({background:"rgba(0,0,0,0.3)"}).fadeIn();
+          $("."+panel).addClass("show");
+        }
+
+        Close = function(panel)
+        {
+          $(".hf_overlay").fadeOut();
+          $(".panel").removeClass("show");
+        }
+    })
+</script>
+</html> 

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>活动核销列表</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/activity.css" />
+</head>
+<body>  
+    <div class="framepage my_coupon">
+        <div class="topbar">
+            <ul class="menu flexbox">
+            	<li class="active">福利礼券</li>
+            	<li>会员疯抢</li>
+            </ul>
+        </div>
+        <div class="wrapper">
+        	<ul class="list">
+        		<li>
+        			<img src="../img/coupon.png" />
+        			<div class="info">
+        			    <p class="name">戴瑞造型-担任洗吹优惠券</p>
+	        			<p class="time">2016-01-12至2016-01-25</p>
+	        		</div>	
+        		</li>
+        		<li>
+        			<img src="../img/coupon_even.png" />
+        			<div class="info">
+        			    <p class="name">戴瑞造型-担任洗吹优惠券</p>
+	        			<p class="time">2016-01-12至2016-01-25</p>
+	        		</div>	
+        		</li>
+        	</ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".topbar li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    })
+</script>
+</html> 

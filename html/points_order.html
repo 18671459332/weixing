@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>兑换订单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/points.css" />
+</head>
+<body>  
+    <div class="framepage points_order">
+        <div class="wrapper">
+            <div class="topCon">
+            	<p class="title"><a class="addrBtn" href="#">请选择收货地址</a></p>
+            	<div class="addr">
+            		<p>姓名：Kabbe</p>
+            		<p>手机：1866958324</p>
+            		<p>地址：靖江花城-7号楼-3单元-301</p>
+            	</div>
+            </div>
+            <div class="item">
+        	    <img src="../img/item.png" />
+        		<p class="name words_line2">《名车志》半年订阅</p>
+        		<p class="points"><span class="num">2250</span>积分</p>
+        		<p>市场参考价：99.00元</p>
+            </div>
+            <div class="number">
+            	<p>数量<span class="num">X1</span></p>
+            </div>
+
+        <div>
+        <div class="footer">
+        	<label><span class="tag">单价:</span><span class="num">2250</span>积分</label>
+        	<a class="exchangeBtn btn">确认兑换</a>
+        </div>
+
+        <div class="panel">
+             <div class="hd-panel">
+                 <p class="title"><a class="closePanel"></a>付款详情</p>
+             </div>
+             <div class="main-panel">
+             	<p>订单信息：<span class="desp">《名车志》半年订阅</span></p>
+             	<p>订单金额：<span class="desp">2250积分</span></p>
+             </div>
+             <div class="ft-panel">
+                <a class="confirmBtn btn">确认付款</a>
+             </div>
+        </div>
+
+
+
+        <div class="addr_panel">
+             <div class="hd-panel">
+                 <p class="title"><a class="closeAddrPanel closePanel"></a>地址选择</p>
+             </div>
+             <div class="main-panel">
+                <ul class="list">
+                  <li>
+                    <p class="name">Leo</p>
+                    <p class="addr">靖江花城-7号楼-3单元-802</p>
+                    <p class="handle"><a class="default active">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+                  </li>
+                  <li>
+                    <p class="name">Leo</p>
+                    <p class="addr">靖江花城-7号楼-3单元-802</p>
+                    <p class="handle"><a class="default">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+                  </li>
+                  <li>
+                    <p class="name">Leo</p>
+                    <p class="addr">靖江花城-7号楼-3单元-802</p>
+                    <p class="handle"><a class="default">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+                  </li>
+                  <li>
+                    <p class="name">Leo</p>
+                    <p class="addr">靖江花城-7号楼-3单元-802</p>
+                    <p class="handle"><a class="default">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+                  </li>
+                </ul>
+             </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        
+        $("body").append("<div class='hf_overlay'></div>");
+        $(".hf_overlay").click(function(){ Close(); });     
+        
+
+
+        //数量面板
+        $(".exchangeBtn").on("click",function(){
+              Open("panel");  
+        })
+
+        $(".closePanel").click(function(){ Close("panel"); }); 
+
+        //地址面板
+        $(".addrBtn").on("click",function(){
+              Open("addr_panel");  
+        })
+
+         $(".closeAddrPanel").click(function(){ Close('addr_panel'); }); 
+
+
+
+
+
+
+        Open = function(panel)
+        {
+          $(".hf_overlay").css({background:"rgba(0,0,0,0.3)"}).fadeIn();
+          $("."+panel).addClass("show");
+        }
+
+        Close = function(panel)
+        {
+          $(".hf_overlay").fadeOut();
+          $("."+panel).removeClass("show");
+        }
+
+
+        $(".confirmBtn").on("click",function(){
+        	layer.msg('兑换成功');
+        })
+    })
+</script>
+</html> 

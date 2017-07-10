@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资料修改</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../plugin/mobiscroll/css/mobiscroll.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<body>  
+    <div class="framepage user_info_edit">
+        <div class="wrapper">
+            <div class="topCon">
+                <img class="banner" src="../img/user_info.png" />
+            </div>
+            <div class="form">
+	            <div class="itemOne flex-wrap">
+	                <div class="inputBox flex-con">
+	                	<input placeholder="请输入您的姓名" />
+	                </div> 
+	                <div class="gender">
+	                    性别<label class="male active">男</label><label class="female">女</label>
+	                    <input name="gender" type="hidden" />
+	                 </div>
+	            </div>
+                <div class="itemTwo">
+	                <div class="inputBox">
+	                	<input class="phone_number" placeholder="请输入您的手机号码" />
+	                </div> 
+	            </div>
+	            <div class="itemThree flex-wrap">
+	                <div class="inputBox flex-con">
+	                	<input placeholder="请输入验证码" />
+	                </div> 
+	                <a class="yzmBtn">发送验证码</a>
+	            </div>
+	            <div class="flex-wrap">
+		            <div class="selectBox flex-con">
+		                <select><option>请选择生日</option></select>
+		            </div>
+		        </div>
+		        <div class="flex-wrap">
+			        <div class="selectBox flex-con">
+		                <select><option>请选择职业</option></select>
+		            </div>
+		        </div>
+
+                <a class="btn submitBtn">修改提交</a>           
+            </div>
+        <div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../plugin/mobiscroll/js/mobiscroll.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".gender label").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+        
+        $(".submitBtn").on("click",function(){
+        	layer.msg('修改成功');
+        })
+
+        // 获取验证码
+		$(".yzmBtn").on("click",function yzm(){
+			
+			// 验证手机号
+			elm = $(".phone_number");
+			val = elm.val();
+			switch(true)
+			{
+				case val=="":
+					layer.msg("请输入 手机号！",{shift:6},function(){ elm.focus(); });
+					return;
+				case !is_phone(val):
+					layer.msg("请输入有效的 手机号！",{shift:6},function(){ elm.focus(); });
+					return;
+			}
+			
+			// 发送数据
+			$(".yzmBtn").off("click");
+			// Ajax("/api/user/regsiter/getAuthcode?user_name="+val,function(ret){
+			// 	if( ret.state )
+			// 	{
+					// 时间问题
+					timer = 60 ;
+					$(".yzmBtn").html(timer+" 秒").addClass("disable");
+					tempt = setInterval(function(){
+						if( --timer==0 )
+						{
+							$(".yzmBtn").on("click",yzm).html("获取验证码").removeClass("disable");
+							clearInterval(tempt);
+						}
+						else
+							$(".yzmBtn").html(timer+" 秒");
+					},1000);
+					layer.msg("已发送");
+		// 		}
+		// 		else
+		// 		{
+		// 			$(".yzmBtn").on("click",yzm);
+		// 			layer.msg(ret.msg);
+		// 		}
+		// 	},function(){
+		// 		   $(".yzmBtn").on("click",yzm);
+		// 	});
+			
+		});
+
+    })
+</script>
+</html> 

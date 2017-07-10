@@ -1,3 +1,8 @@
+html,body{ height:100%; }
+.wrapper{ min-height:100%; }
+.empty_list{ text-align:center; margin:auto; position:absolute; top:50%; transform:translateY(-50%); width:100%; left:0;}
+.empty_list img{display:inline-block;width:3rem; height:3rem; }
+.empty_list h{ display:block; font-size:0.28rem; color:#888; margin-top:0.1rem; }
 /*===============报修列表=================*/
 .repair_list_manager{ padding-top:1.65rem; }
 .repair_list_manager .topbar{ background:#fff; top:0;}
@@ -27,22 +32,53 @@
 .repair_list_manager .wrapper .list li .infoCon .details{ padding:0.35rem 0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-right:0.8rem; color:#999; }
 
 
+/*===============报修列表=================*/
+.repair_list_manager{ padding-top:1.65rem; }
+.repair_list_manager .topbar{ background:#fff; top:0;}
+.repair_list_manager .topbar .menu{ padding:0.2rem 0.25rem; border-bottom:1px solid #e8e8e8; }
+.repair_list_manager .topbar .menu li{ text-align:center; border:1px solid #EFAF26; padding:0.1rem; font-size:0.27rem;}
+.repair_list_manager .topbar .menu li:nth-child(1){ border-radius:8px 0 0 8px; }
+.repair_list_manager .topbar .menu li:nth-child(2){ border-radius:0 8px 8px 0 ; }
+.repair_list_manager .topbar .menu li.active{ color:#fff; background:#EFAF26; }
+.repair_list_manager .topbar .tips{ padding:0.15rem 0.25rem; vertical-align:top; }
+.repair_list_manager .topbar .tips .number{ margin:0 0.1rem; color:#EFAF26; vertical-align:top; font-size:0.3rem;}
+
+.repair_list_owner .wrapper .number{ font-size:0.275rem; }
+.repair_list_owner .wrapper .list li{ margin-top:0.15rem; background:#fff; }
+.repair_list_owner .wrapper .list li a{ display:block; }
+.repair_list_owner .wrapper .list li .title{ border-bottom:1px solid #e8e8e8; padding:0.2rem 0.25rem; overflow:hidden;}
+.repair_list_owner .wrapper .list li .title .leftCon{ float:left; }
+.repair_list_owner .wrapper .list li .title .leftCon .time{ color:#999; margin-top:0.1rem; }
+.repair_list_owner .wrapper .list li .title .rightCon{ float:right; vertical-align:middle; padding:0.24rem 0; }
+.repair_list_owner .wrapper .list li .infoCon{ padding:0 0.25rem; color:#999; }
+.repair_list_owner .wrapper .list li .infoCon .info{ border-bottom:1px solid #e8e8e8; }
+.repair_list_owner .wrapper .list li .infoCon .info p{ margin:0.2rem 0; }
+.repair_list_owner .wrapper .list li .infoCon .info p .name:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e696'; margin-right:0.15rem;}
+.repair_list_owner .wrapper .list li .infoCon .info p .phone{ float:right; }
+.repair_list_owner .wrapper .list li .infoCon .info p .phone:before{  font:0.27rem/0.27rem 'iconfont'; content:'\e601'; margin-right:0.15rem;}
+.repair_list_owner .wrapper .list li .infoCon .info p .addr:before{  font:0.27rem/0.27rem 'iconfont'; content:'\e690'; margin-right:0.15rem; }
+.repair_list_owner .wrapper .list li .infoCon .details{ padding:0.35rem 0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-right:0.8rem; color:#999; }
+
+.repair_list_owner .wrapper .list li .title .rightCon .state{ float:right; color:#91D69C;}
+.repair_list_owner .wrapper .list li .title .rightCon .state.unhandle{ color:#EEB125; }
+
 /*===============报修详情=================*/
-.repair_details_manager{ padding-top:0.8rem; padding-bottom:1.1rem;}
+.repair_details_manager .wrapper{ padding-top:0.8rem; padding-bottom:1.1rem;}
 .repair_details_manager .topbar{  background:#fff; font-size:0.27rem; top:0;}
 .repair_details_manager .topbar p{ padding:0.2rem 0.25rem; }
-.repair_details_manager .topbar p .name{ margin-left:0.5rem; color:#999;}
+.repair_details_manager .topbar p .name{ margin-left:0.2rem; color:#999;}
 .repair_details_manager .topbar p .label:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e696'; margin-right:0.15rem; color:#EEB125;}
 .repair_details_manager .topbar p .time{ float:right; color:#999; }
 .repair_details_manager .topbar p .time:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e659'; margin-right:0.15rem; color:#EEB125;}
 
-
-.repair_details_manager .wrapper .slideBtn:after{ font:0.27rem/0.27rem 'iconfont'; content:'\e638'; margin-right:0.15rem; margin-left:0.15rem;}
-.repair_details_manager .wrapper .slideBtn.down:after{ content:'\e621'; }
+.repair_details_manager .wrapper .slideBtn{ font-size:0.26rem; }
+.repair_details_manager .wrapper .slideBtn:after{ font:0.27rem/0.27rem 'iconfont'; content:'\e621'; margin-right:0.15rem; margin-left:0.15rem;}
+.repair_details_manager .wrapper .slideBtn.down:after{ content:'\e638'; }
 
 .repair_details_manager .wrapper .main .infoCon{ background:#fff; padding:0.1rem 0.25rem; margin-top:0.15rem; }
-.repair_details_manager .wrapper .main .infoCon p{ margin:0.25rem 0; padding-left:1.8rem; position:relative; }
+.repair_details_manager .wrapper .main .infoCon p{ margin:0.25rem 0; padding-left:1.8rem; position:relative; min-height:0.3rem }
 .repair_details_manager .wrapper .main .infoCon p > label{ position:absolute; left:0rem; font-size:0.27rem; top:-3px;}
+.repair_details_manager .wrapper .main .infoCon p.contact label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e627'; margin-right:0.15rem; color:#999; }
 .repair_details_manager .wrapper .main .infoCon p.phone label:before{ font:0.30rem/0.27rem 'iconfont'; content:'\e611'; margin-right:0.15rem; color:#999; }
 .repair_details_manager .wrapper .main .infoCon p.addr label:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e62a'; margin-right:0.15rem; color:#999;  }
 .repair_details_manager .wrapper .main .infoCon p.type label:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e643'; margin-right:0.15rem; color:#999; }
@@ -52,14 +88,16 @@
 .repair_details_manager .wrapper .main .stateCon p > label{ font-size:0.28rem; }
 .repair_details_manager .wrapper .main .stateCon .title{ border-bottom:1px solid #e8e8e8; padding:0.2rem 0.25rem;}
 .repair_details_manager .wrapper .main .stateCon .title .state{ float:right; color:#91D69C;}
-.repair_details_manager .wrapper .main .stateCon .details{ padding:0.1rem 0.25rem; }
+.repair_details_manager .wrapper .main .stateCon .title .state.unhandle{ color:#EEB125; }
+.repair_details_manager .wrapper .main .stateCon .details{ padding:0.1rem 0.25rem;font-size:0; }
 .repair_details_manager .wrapper .main .stateCon .details p { padding:0.1rem 0; }
 .repair_details_manager .wrapper .main .stateCon .details p .slideBtn{ float:right; color:#777; }
 .repair_details_manager .wrapper .main .stateCon .slideCon{ padding-bottom:0.15rem; }
-.repair_details_manager .wrapper .main .stateCon .slideCon p{ color:#999; margin-bottom:0.6rem; }
+.repair_details_manager .wrapper .main .stateCon .slideCon p{ color:#999; margin-bottom:0.6rem; font-size:0.26rem; }
+.repair_details_manager .wrapper .main .stateCon .slideCon > img{ display:inline-block; height:1.5rem; width:1.5rem; margin:0 0.15rem 0.15rem 0; }
 .repair_details_manager .wrapper .main .commentCon{ background:#fff; margin-top:0.15rem; }
 .repair_details_manager .wrapper .main .commentCon > p{ padding:0.2rem 0.25rem; border-bottom:1px solid #e8e8e8;}
-.repair_details_manager .wrapper .main .commentCon > p > label{ font-size:0.28rem;>   }
+.repair_details_manager .wrapper .main .commentCon > p > label{ font-size:0.28rem;  }
 .repair_details_manager .wrapper .main .commentCon > p .slideBtn{ float:right; color:#777; }
 .repair_details_manager .wrapper .main .commentCon .slideCon{ padding-bottom:0.15rem; }
 .repair_details_manager .wrapper .main .commentCon .slideCon .commentList li{ position:relative; padding:0.25rem 0.25rem 0.25rem 1.2rem; }
@@ -67,14 +105,14 @@
 .repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .name{ margin-bottom:0.1rem; }
 .repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .text{ color:#777; margin-bottom:0.3rem; }
 .repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .imgCon{ font-size:0; }
-.repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .imgCon img{ height:1.5rem; width:1.5rem; margin:0 0.15rem 0.15rem 0; }
+.repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .imgCon img{ display:inline-block; height:1.5rem; width:1.5rem; margin:0 0.15rem 0.15rem 0; }
 .repair_details_manager .wrapper .main .commentCon .slideCon .commentList li .time{ color:#999;border-bottom:1px solid #e8e8e8; padding:0.2rem 0; }
 .repair_details_manager .wrapper .main .commentAdd{ background:#fff; margin-top:0.15rem; padding:0.25rem;  }
 .repair_details_manager .wrapper .main .commentAdd .commentBtn{ border:1px solid #e8e8e8; display:block; padding:0.1rem 0.25rem; color:#999; border-radius:8px;}
 .repair_details_manager .wrapper .main .evaluation { background:#fff; margin-top:0.15rem; padding:0 0.25rem 0.5rem 0.25rem;  }
 .repair_details_manager .wrapper .main .evaluation > p{  padding:0.3rem 0; }
 .repair_details_manager .wrapper .main .evaluation > p label{ font-size:0.28rem; }
-.repair_details_manager .wrapper .main .evaluation .evaluationContent .total { text-align:center; padding:0 1.3rem 0.15rem 1.3rem; }
+.repair_details_manager .wrapper .main .evaluation .evaluationContent .total { text-align:center; padding:0 1rem 0.15rem 1rem; }
 .repair_details_manager .wrapper .main .evaluation .evaluationContent .total p{ border:1px solid #e8e8e8; padding:0.2rem 0; font-size:0.28rem; }
 .repair_details_manager .wrapper .main .evaluation .evaluationContent .total p .type{ color:#CB2939; }
 .repair_details_manager .wrapper .main .evaluation .evaluationContent ul.category{ padding:0.25rem; }
@@ -99,7 +137,7 @@
 .comment_form_manager .wrapper .form{ background:#fff; padding:0.2rem; }
 .comment_form_manager .wrapper .form textarea{ padding:0.2rem; width:100%; height:2.8rem; color:#999;}
 .comment_form_manager .wrapper .form .imgCon{ font-size:0; }
-.comment_form_manager .wrapper .form .imgCon img{ height:1.4rem; width:1.4rem; margin:0 0.15rem 0.15rem 0;}
+.comment_form_manager .wrapper .form .imgCon img{ display:inline-block; height:1.4rem; width:1.4rem; margin:0 0.15rem 0.15rem 0;}
 .comment_form_manager .wrapper .form .btnCon{ padding:0.5rem 0 0.3rem 0; }
 .comment_form_manager .wrapper .form .btnCon .commentBtn{ display:block; position:relative; }
 .comment_form_manager .wrapper .form .commentBtn .set_contentText{ opacity:0; position:absolute; display:block; width:100%; top:0; left:0;}
@@ -133,10 +171,26 @@
 .repair_add_manager .wrapper .form .details p { padding:0.1rem 0; font-size:0.28rem; }
 .repair_add_manager .wrapper .form .details textarea{ padding:0.2rem; width:100%; height:2.8rem; color:#999;}
 .repair_add_manager .wrapper .form .details .imgCon{ font-size:0; padding-bottom:0.1rem;}
-.repair_add_manager .wrapper .form .details .imgCon img{ height:1.4rem; width:1.4rem; margin:0 0.15rem 0.15rem 0;}
+.repair_add_manager .wrapper .form .details .imgCon img{ display:inline-block; height:1.4rem; width:1.4rem; margin:0 0.15rem 0.15rem 0;}
 
 
-/*===============选择地址=================*/
+
+/*===============地址列表=================*/
+.repair_addr_list .wrapper .list li{ padding:0.25rem 0.25rem 0 0.25rem; background:#fff; margin-bottom:0.2rem;}
+.repair_addr_list .wrapper .list li p.name{ font-size:0.3rem/0.3rem; color:#000;} 
+.repair_addr_list .wrapper .list li p.addr{  padding:0.15rem 0; color:#999; }
+.repair_addr_list .wrapper .list li p.handle{ border-top:1px solid #e8e8e8; padding:0.2rem 0; }
+.repair_addr_list .wrapper .list li p.handle .default{ color:#999;  }
+.repair_addr_list .wrapper .list li p.handle .default:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e6be'; margin-right:0.15rem; }
+.repair_addr_list .wrapper .list li p.handle .default.active:before{ content:'\e642'; color:#EEB125; }
+.repair_addr_list .wrapper .list li p.handle .btnGroup{ float:right;  }
+.repair_addr_list .wrapper .list li p.handle .btnGroup a{ color:#999; margin-left:0.3rem; }
+.repair_addr_list .wrapper .list li p.handle .btnGroup a:active{ opacity:0.6; }
+.repair_addr_list .wrapper .list li p.handle .btnGroup a.editBtn:before{ font:0.27rem/0.27rem 'iconfont'; content:'\e60a'; margin-right:0.1rem;}
+.repair_addr_list .wrapper .list li p.handle .btnGroup a.delBtn:before{ font:0.28rem/0.27rem 'iconfont'; content:'\e8c0'; margin-right:0.1rem;}
+
+
+/*===============新增地址=================*/
 .repair_addr_manager .wrapper{ padding-bottom:1.1rem; }
 .repair_addr_manager .wrapper .form .infoCon > p{ padding:0 0.25rem; background:#fff;  padding-left:1.6rem; padding-right:0.7rem; position:relative;}
 .repair_addr_manager .wrapper .form .infoCon > p label{ position:absolute; padding:0.25rem 0; left:0.25rem; font-size:0.27rem; }
@@ -144,3 +198,18 @@
 .repair_addr_manager .wrapper .form .infoCon > p select{ display:inline-block; width:100%; padding:0.25rem 0; border-bottom:1px solid #e8e8e8; color:#999; outline:none; }
 .repair_addr_manager .wrapper .form .infoCon > p:after{ font:0.30rem/0.8rem 'iconfont'; content:'\e621';  color:#999; position:absolute; right:0.25rem;}
 .repair_addr_manager .wrapper .form .infoCon > p:last-child select{ border:none; }
+
+/*===============维修已完成-评价=================*/
+.repair_evalute_manager .wrapper{ padding:0 0.25rem; }
+.repair_evalute_manager .wrapper .total { padding:0.2rem 0; font-size:0.28rem; border-bottom:1px solid #e8e8e8; }
+.repair_evalute_manager .wrapper .total p{ position:relative; padding-right:0.6rem; }
+.repair_evalute_manager .wrapper .total p .type{ color:#CB2939; float:right;}
+.repair_evalute_manager .wrapper .total p:after{ font:0.3rem/0.4rem 'iconfont'; content:'\e621';  color:#999; position:absolute; right:0.15rem;  }
+.repair_evalute_manager .wrapper ul.category{ padding:0.25rem; }
+.repair_evalute_manager .wrapper ul.category li{ padding:0.15rem; font-size:0.27rem; color:#444;}
+.repair_evalute_manager .wrapper ul.category li .star { float:right }
+.repair_evalute_manager .wrapper ul.category li .star .icon{ position:relative; display:inline-block; margin-left:0.15rem; width:0.27rem;}
+.repair_evalute_manager .wrapper ul.category li .star .icon:after{ position:absolute; top:-0.14rem; font:0.30rem/0.0rem 'iconfont'; content:'\e641';  color:#999;}
+.repair_evalute_manager .wrapper ul.category li .star .icon.active:after{ color:#EEB125; }
+.repair_evalute_manager .wrapper ul.category .content{ background:#f7f7f7; border:1px solid #e8e8e8; border-radius:8px; padding:0.15rem; height:2rem; color:#999;}
+.repair_evalute_manager .wrapper textarea{ padding:0.2rem; width:100%; height:2.8rem; color:#999;margin:0.3rem 0 0.8rem 0; background:#e8e8e8; outline:none; }`

@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/manager.css" />
+</head>
+<body>  
+    <div class="framepage repair_addr_list">
+        <div class="wrapper">
+            <ul class="list">
+            	<li>
+            		<p class="name">Leo</p>
+            		<p class="addr">靖江花城-7号楼-3单元-802</p>
+            		<p class="handle"><a class="default active">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+            	</li>
+            	<li>
+            		<p class="name">Leo</p>
+            		<p class="addr">靖江花城-7号楼-3单元-802</p>
+            		<p class="handle"><a class="default">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+            	</li>
+            	<li>
+            		<p class="name">Leo</p>
+            		<p class="addr">靖江花城-7号楼-3单元-802</p>
+            		<p class="handle"><a class="default">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+            	</li>
+            	<li>
+            		<p class="name">Leo</p>
+            		<p class="addr">靖江花城-7号楼-3单元-802</p>
+            		<p class="handle"><a class="default">默认房源</a><span class="btnGroup"><a class="editBtn">编辑</a><a class="delBtn">删除</a></span></p>
+            	</li>
+            </ul>
+        <div>
+        <div class="footer">
+            <a class="btn addBtn">添加房源</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".handle .default").on("click",function(){
+        	$(".default").removeClass("active");
+            $(this).addClass("active");
+            layer.msg('设置成功');
+        })
+    })
+</script>
+</html> 

@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+<body>  
+    <div class="framepage index">
+        <div class="wrapper">
+        	<img class="banner" src="../img/index_banner.jpg" />
+            <div class="menu">
+                <li><a href="repair_add_manager.html"><img src="../img/menu1.png" /><p>在线报修</p></a></li>
+                <li><a class="dev"><img src="../img/menu2.png" /><p>在线缴费</p></a></li>
+                <li><a class="dev"><img src="../img/menu3.png" /><p>小区通知</p></a></li>
+                <li><a class="singnIn"><img src="../img/menu4.png" /><p>每日签到</p></a></li>
+                <li><a class="dev"><img src="../img/menu5.png" /><p>热门活动</p></a></li>
+                <li><a class="dev"><img src="../img/menu6.png" /><p>投诉表彰</p></a></li>
+                <li><a class="dev"><img src="../img/menu7.png" /><p>社区超市</p></a></li>
+                <li><a class="dev"><img src="../img/menu8.png" /><p>新闻资讯</p></a></li>
+            </div>
+            <div class="news">
+                <img src="../img/news_logo.png" />
+                <p><a>摄影大赛-邀您分享镜头下的伟星之美</a></p>
+            </div>
+            <div class="item">
+                <div class="leftCon">
+                    <a class="dev"><img class="item1" src="../img/item1.png" /></a>
+                    <a class="dev"><img class="item3" src="../img/item3.png" /></a>
+                </div>
+                <div class="rightCon">
+                    <a class="dev"><img class="item2" src="../img/item2.png" /></a>
+                </div>
+                <div class="bottomCon">
+                    <a class="dev"><img class="item4" src="../img/item4.png" /></a>
+                </div>
+            </div>
+            <div class="aboutUs">
+                <img src="../img/wx_logo.png" />
+                <a class="linkBtn">关于我们</a>
+            </div>
+        </div>
+        <div class="footer">
+        	<ul class="flexbox nav">
+                <li class="active"><a href="page_index.html"><img src="../icon/index_active.png" />首页</a></li>
+                <li><a href="page_service_number.html"><img src="../icon/tel.png" />常用电话</a></li>
+                <li><a href="user_center.html"><img src="../icon/user.png" />个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+    $(document).ready(function(){
+        //开发中..
+        $(".dev").on("click",function(){
+            layer.msg('该应用暂未上线');
+        })  
+
+        //签到
+        $(".singnIn").on("click",function(){
+            layer.msg('签到成功,本获得 5 积分');
+        })
+    })
+</script>
+</html> 

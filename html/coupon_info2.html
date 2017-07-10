@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../plugin/swiper/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/coupon.css" />
+</head>
+<body>  
+    <div class="framepage coupon_info2">
+        <div class="wrapper">
+            <div class="topCon">
+                <div class="swiper-container banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/info_banner.jpg" /></div>
+                        <div class="swiper-slide"><img src="../img/info_banner.jpg" /></div>
+                    </div>
+                    <div class="swiper-pagination p1"></div>
+                </div>
+                <p class="name">
+                   <img src="../img/coupon_img.png" />
+                   <label>年货节礼物</label>
+                </p>
+                <p class="tip">
+                    <span class="value">价值：￥300</span>
+                    <span class="desp">兑换时间：4月30日至9月30日</span>
+                </p>
+            </div>
+            <div class="instruct">
+                <p class="title">
+                    <img src="../img/0736.png" />奖品简介
+                </p>
+                <p class="textTitle">奖品介绍</p>
+                <p>领取该券需凭100积分</p>
+                <p class="textTitle">福利领取</p>
+                <p>法定节假日不可使用</p>
+                <p class="textTitle">领取方式</p>
+                <p>无须预约，消费高峰时可能需要等位</p>
+            </div>
+            <div class="support">
+                <p class="title">奖品提供方<a class="contactBtn">联系我</a></p>
+                <p>星家人俱乐部</p>
+                <p>地址：杭州市滨江区创业基地</p>
+                <p>介绍：</p>
+            </div>
+            <div class="reward">
+                <img src="../img/0737.png" />
+                <p class="name">查看中奖名单</p>
+                <p>共10份|0人中奖</p>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="btn getBtn">限时疯抢</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/support.js"></script>
+<script type="text/javascript" src="../plugin/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script>
+     //轮播图
+    swiper = new Swiper(".banner",{
+            loop:true,
+            autoplay:4000,
+            pagination:".p1",
+            preloadImages:false,
+            lazyLoading:true
+    });
+</script>
+</html> 

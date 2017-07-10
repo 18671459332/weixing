@@ -25,7 +25,7 @@
 	            </div>
                 <div class="itemTwo">
 	                <div class="inputBox">
-	                	<input placeholder="请输入您的手机号码" />
+	                	<input class="phone_number"placeholder="请输入您的手机号码" />
 	                </div> 
 	            </div>
 	            <div class="itemThree flex-wrap">
@@ -73,6 +73,52 @@
         $(".gender label").on("click",function(){
             $(this).addClass("active").siblings().removeClass("active");
         })
+
+        // 获取验证码
+		$(".yzmBtn").on("click",function yzm(){
+			
+			// 验证手机号
+			elm = $(".phone_number");
+			val = elm.val();
+			switch(true)
+			{
+				case val=="":
+					layer.msg("请输入 手机号！",{shift:6},function(){ elm.focus(); });
+					return;
+				case !is_phone(val):
+					layer.msg("请输入有效的 手机号！",{shift:6},function(){ elm.focus(); });
+					return;
+			}
+			
+			// 发送数据
+			$(".yzmBtn").off("click");
+			// Ajax("/api/user/regsiter/getAuthcode?user_name="+val,function(ret){
+			// 	if( ret.state )
+			// 	{
+					// 时间问题
+					timer = 60 ;
+					$(".yzmBtn").html(timer+" 秒").addClass("disable");
+					tempt = setInterval(function(){
+						if( --timer==0 )
+						{
+							$(".yzmBtn").on("click",yzm).html("获取验证码").removeClass("disable");
+							clearInterval(tempt);
+						}
+						else
+							$(".yzmBtn").html(timer+" 秒");
+					},1000);
+					layer.msg("已发送");
+		// 		}
+		// 		else
+		// 		{
+		// 			$(".yzmBtn").on("click",yzm);
+		// 			layer.msg(ret.msg);
+		// 		}
+		// 	},function(){
+		// 		   $(".yzmBtn").on("click",yzm);
+		// 	});
+			
+		});
     })
 </script>
 </html> 

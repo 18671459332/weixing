@@ -1,0 +1,109 @@
+.footer{ padding:0; }
+.layui-layer-dialog .layui-layer-content{text-align:center;}
+/*=========首页===========*/
+.index .wrapper{ padding-bottom:1rem; }
+.index .wrapper .banner img{ width:100%; }
+.index .wrapper .menu { padding:0.2rem 0px; font-size:0; background:#fff; }
+.index .wrapper .menu li { display:inline-block; width:25%; padding:0.2rem 0; }
+.index .wrapper .menu li a { display:block; font-size:0.26rem; text-align:center;}
+.index .wrapper .menu li a img { display:inline-block; width:0.7rem; margin-bottom:0.1rem }
+.index .wrapper .menu li a:active img { -webkit-transform:scale(1.15,1.15); transform:scale(1.15,1.15); }
+.index .wrapper .menu li a:active p{ color:#999; }
+
+.index .wrapper .news{ position:relative; padding:0.2rem 0.4rem 0.2rem 1.8rem; margin:0.2rem 0; background:#fff;}
+.index .wrapper .news img{ position:absolute; left:0.2rem; height:0.41rem; width:1.4rem; }
+.index .wrapper .news p{ line-height:0.45rem; height:0.45rem; border-left:1px solid #e8e8e8; padding:0 0.15rem; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.index .wrapper .news p a{ display:inline-block; width:100%;}
+.index .wrapper .news:after{ font:0.30rem/0.45rem 'iconfont'; content:'\e624';  color:#999; position:absolute; top:0.2rem; right:0.2rem; }
+
+.index .wrapper .item{ background:#fff; padding:0.2rem; font-size:0;}
+.index .wrapper .item img{ width:100%; }
+.index .wrapper .item .leftCon{ width:50%; display:inline-block; }
+.index .wrapper .item .leftCon .item3{ border-top:1px solid #e8e8e8; }
+.index .wrapper .item .rightCon{ width:50%; display:inline-block; }
+.index .wrapper .item .bottomCon{ width:100%; display:inline-block; border-top:1px solid #e8e8e8; }
+.index .wrapper .aboutUs{ padding:0.7rem 0; text-align:center; }
+.index .wrapper .aboutUs img{ display:inline-block; vertical-align:middle; height:0.9rem; }
+.index .wrapper .aboutUs .linkBtn{ border:1px solid #ddd; vertical-align:middle; margin-left:.3rem; padding:0.1rem 0.2rem; color:#999; border-radius:8px;}
+.index .wrapper .aboutUs .linkBtn:after{ font:0.28rem/0.28rem 'iconfont'; content:'\e6af';  color:#999;  }
+
+
+/*=========常用电话===========*/
+.service_number .wrapper{ padding:0.3rem 0.25rem 1rem 0.25rem; }
+.service_number .wrapper .hd-title{ margin-bottom:0.3rem;  font-size:0.3rem; }
+.service_number .wrapper .hd-title:before{ margin-right:0.15rem; font:0.35rem/0.3rem 'iconfont'; content:'\e701';  color:#EEB125; }
+.service_number .wrapper .list li{ margin-bottom:0.25rem; border:1px solid #e8e8e8; background:#fff; padding:0 0.2rem; border-radius:10px;}
+.service_number .wrapper .list li p{ border-bottom:1px solid #e8e8e8; padding:0.2rem 0; position:relative; }
+.service_number .wrapper .list li p:last-child{ border:none;  }
+.service_number .wrapper .list li p.title{ padding:0.18rem 0; font-size:0.3rem; color:#000;}
+.service_number .wrapper .list li p.info:after{ font:0.28rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:0rem; top:0.26rem; }
+.service_number .wrapper .list li p.info:active a{ opacity:0.6; }
+.service_number .wrapper .list li p.info a{ color:#999;  }
+.service_number .wrapper .list li:nth-child(1) p.title label{ border-left:5px solid #10AEFF; padding:0 0.15rem; }
+.service_number .wrapper .list li:nth-child(2) p.title label{ border-left:5px solid #FFBE00; padding:0 0.15rem; }
+.service_number .wrapper .list li:nth-child(3) p.title label{ border-left:5px solid #09BB07; padding:0 0.15rem; }
+.service_number .wrapper .list li:nth-child(4) p.title label{ border-left:5px solid #F76260; padding:0 0.15rem; }
+
+
+
+/*=========常用电话===========*/
+.user_center{ background:#fff; }
+.user_center .wrapper{ padding:0.3rem 0 1rem 0;   }
+.user_center .wrapper .topCon{ text-align:center; padding:0 0.3rem; }
+.user_center .wrapper .topCon img{ display:inline-block; }
+.user_center .wrapper .topCon .avatarCon{ display:inline-block; position:relative; }
+.user_center .wrapper .topCon .avatarCon img.avatar{ height:1rem; width:1rem; border-radius:100%; }
+.user_center .wrapper .topCon .avatarCon img.flag{ position:absolute; height:0.35rem; width:0.35rem; right:-0.05rem; bottom:-0.05rem; }
+.user_center .wrapper .topCon .name{ padding:0.25rem 0; color:#333; font-size:0.28rem; }
+.user_center .wrapper .topCon img.card{ width:70%; border-radius:15px; }
+.user_center .wrapper .topCon .tip{ line-height:0.8rem; color:#333; padding:0.1rem 0; vertical-align:bottom; }
+.user_center .wrapper .topCon .tip:before{ font:0.35rem/0.8rem 'iconfont'; content:'\e637'; margin-right:0.15rem; color:#E8C895; vertical-align:bottom; }
+.user_center .wrapper .menu{ font-size:0; }
+.user_center .wrapper .menu li{ display:inline-block; width:33.33%; text-align:center; margin-bottom:0.2rem}
+.user_center .wrapper .menu li p{ font-size:0.26rem; color:#999; margin-top:0.1rem;}
+.user_center .wrapper .menu li img{ display:inline-block; width:0.9rem; height:0.9rem; }
+.user_center .wrapper .menu li a:active img { -webkit-transform:scale(1.15,1.15); transform:scale(1.15,1.15); }
+
+/*=========个人资料===========*/
+.user_info .wrapper{ padding:0.25rem 0.25rem 0 0.25rem; }
+.user_info .wrapper .content{ background:#fff; border:1px solid #e8e8e8; border-radius:10px;}
+.user_info .wrapper .content .topCon{ font-size:0.28rem; border-bottom:1px solid #e8e8e8; position:relative; padding:0.3rem 0.3rem 0.3rem 1.6rem; line-height:0.8rem;}
+.user_info .wrapper .content .topCon img{ position:absolute; left:0.4rem; top:0.3rem; height:0.8rem; width:0.8rem; border-radius:100%; }
+.user_info .wrapper .content .info{ padding:0.2rem 0.4rem 0.8rem 0.4rem; }
+.user_info .wrapper .content .info p{ padding:0.2rem 0; }
+.user_info .wrapper .content .info p .desp{ float:right; }
+.user_info .wrapper .content .info p .desp.none{ color:#999; }
+.user_info .wrapper .content .info .editBtn{ margin-top:0.5rem; }
+
+
+/*=========个人资料修改===========*/
+.user_info_edit{ background:#fff; }
+.user_info_edit .wrapper { background:#fff; }
+.user_info_edit .topCon{ text-align:center; padding:0.5rem 0; }
+.user_info_edit .topCon img.banner{ display:inline-block; width:60%;}
+.user_info_edit .form{ padding:0.4rem 0.5rem; }
+.user_info_edit .form > div{ padding:0.2rem 0; }
+.user_info_edit .form > div > div{ padding: 0 0.15rem;  }
+.user_info_edit .form > div > div.inputBox{ border:1px solid #ccc; border-radius:8px; padding:0.1rem 0.25rem; position:relative; padding-left:0.6rem; }
+.user_info_edit .form > div > div.selectBox{ border:1px solid #ccc; border-radius:8px; padding:0.1rem 0.25rem; position:relative; padding-left:0.25rem; padding-right:0.6rem;}
+.user_info_edit .form > div > div.selectBox:after{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e621'; right:0.25rem; color:#999; top:0.1rem; }
+
+
+.user_info_edit .form > div.itemOne > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e70f'; left:0.15rem; color:#ccc; }
+.user_info_edit .form > div.itemTwo > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e608'; left:0.15rem; color:#ccc; }
+.user_info_edit .form > div.itemThree > div.inputBox:before{ position:absolute; font:0.3rem/0.5rem 'iconfont'; content:'\e600'; left:0.15rem; color:#ccc; }
+.user_info_edit .form > div > div.inputBox input{ height:0.5rem; line-height:0.5rem; width:100%; }
+.user_info_edit .form > div > div.selectBox select{ height:0.5rem; line-height:0.5rem; width:100%; color:#999; }
+.user_info_edit .form > div > div.selectBox  a{ height:0.5rem; line-height:0.5rem; width:100%; color:#999; }
+.user_info_edit .form > div > div.selectBox label{ display:inline-block; width:100%}
+.user_info_edit .form > div > .gender{ margin-left:0.2rem; width:2.5rem; height:0.7rem; line-height:0.7rem;}
+.user_info_edit .form > div > .gender label:before{ font:0.26rem/0.26rem 'iconfont'; content:'\e6be'; margin:0 0.1rem 0 0.15rem; color:#63aeff;  }
+.user_info_edit .form > div > .gender label.active:before{  content:'\e636'; }
+.user_info_edit .form > div > .yzmBtn{ height:0.7rem; line-height:0.7rem; background:#EEB125; color:#fff; display:block; border-radius:8px; padding:0 0.2rem; margin-left:0.2rem;  }
+.user_info_edit .form > div > .yzmBtn:active{ opacity:0.6; }
+.user_info_edit .form > div > .yzmBtn.disable{ background:#999; }
+.user_info_edit .form  .submitBtn{ margin-top:0.8rem; }
+
+.user_info_edit .form h3{ font-size:0.28rem; color:#333; margin-bottom:0.15rem;}
+
+

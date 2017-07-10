@@ -1,0 +1,46 @@
+/*=============消息列表=============*/
+.news_list .wrapper .main{ padding:0.25rem 0.15rem;}
+.news_list .wrapper .list{font-size:0.25rem; border-radius:10px; overflow:hidden; border:1px solid #e8e8e8; }
+.news_list .wrapper .list li{ position:relative; padding:0.2rem 0.2rem 0.2rem 1.5rem; background:#fff; border-bottom:1px solid #e8e8e8;}
+.news_list .wrapper .list li.active label:after{ display:block; font:0.35rem/0.3rem 'iconfont'; content:'\e602';  color:#f00; position:absolute; top:-0.1rem; right:-0.45em;  }
+.news_list .wrapper .list li > label{ display:block; width:1.1rem; font-size:0.22rem; padding:3px 0; text-align:center; color:#fff; border-radius:5px; position:absolute; top:0.25rem; left:0.2rem;  }
+.news_list .wrapper .list li > label.bg1{ background:#04BE02; }
+.news_list .wrapper .list li > label.bg2{ background:#FFBE00; }
+.news_list .wrapper .list li > label.bg3{ background:#10AEFF; }
+.news_list .wrapper .list li .info p{ color:#444; padding:8px 0; }
+.news_list .wrapper .list li .info p.name{ vertical-align:middle; line-height:0.3rem; font-size:0.26rem; padding-right:60px; position:relative;}
+.news_list .wrapper .list li .info p.name .time{ position:absolute; right:0; font-size:0.24rem; color:#999; line-height:0.3rem; }
+.news_list .wrapper .list li .info p.text{ min-height:0.6rem; padding:0; padding-right:1rem; position:relative; }
+.news_list .wrapper .list li .info p.text:after{ font:0.30rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:0.25rem; top:0.26rem }
+
+/*=============消息详情=============*/
+.news_info .wrapper{ padding:0 0.25rem; }
+.news_info .wrapper .time{ text-align:center; padding:0.25rem 0; }
+.news_info .wrapper .time label{ background:#C4C3C9; color:#fff; border-radius:8px; padding:0.05rem 0.15rem; }
+.news_info .wrapper .content{ background:#fff; border-radius:10px; border:1px solid #e8e8e8; }
+.news_info .wrapper .content .title{ padding-left:1rem; position:relative; line-height:1rem; font-size:0.3rem; border-bottom:1px solid #e8e8e8; }
+.news_info .wrapper .content .title img{ height:0.7rem; height:0.7rem; position:absolute; left:0.15rem; top:0.15rem;}
+.news_info .wrapper .content .title p{ border-left:1px solid #e8e8e8; text-indent:0.4rem; }
+.news_info .wrapper .content .text{ color:#444; padding:0.5rem 0.3rem; }
+.news_info .wrapper .content .text p.article{ text-indent:0.5rem }
+.news_info .wrapper .content .text p.tip{ text-align:right; margin-top:0.3rem;}
+
+/*=============资讯列表=============*/
+.information_list .wrapper .list{ padding:0.15rem 0.25rem;} 
+.information_list .wrapper .list li{ background:#fff; border-radius:10px; border:1px solid #e8e8e8; margin-top:0.2rem; padding:0 0.2rem; }
+.information_list .wrapper .list li p{ padding:0.2rem 0; }
+.information_list .wrapper .list li p.title{ height:1rem; border-bottom:1px solid #e8e8e8; padding-left:0.8rem; position:relative; padding-right:0.2rem}
+.information_list .wrapper .list li p.title:after{ font:0.30rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:-0.05rem; top:0.26rem }
+.information_list .wrapper .list li p.title img{ height:0.6rem; width:0.6rem; left:0; position:absolute;}
+.information_list .wrapper .list li p.tip{ color:#999; font-size:0.25rem; }
+.information_list .wrapper .list li p.tip .time{ float:right; }
+
+/*=============动态列表=============*/
+.infomation_newslist .wrapper .list{ padding:0.15rem 0.25rem;} 
+.infomation_newslist .wrapper .list li{ height:1.6rem; background:#fff; border-radius:10px; border:1px solid #e8e8e8; margin-top:0.2rem; padding:0.2rem 0.4rem 0.2rem 1.6rem; position:relative;}
+.infomation_newslist .wrapper .list li img{ height:1.2rem; width:1.2rem; position:absolute; left:0.2rem; top:0.2rem;}
+.infomation_newslist .wrapper .list li p.title{ height:0.8rem; position:relative;}
+.infomation_newslist .wrapper .list li:after{ font:0.30rem/0.3rem 'iconfont'; content:'\e624';  color:#999; position:absolute; right:0.1rem; top:0.5rem }
+
+.infomation_newslist .wrapper .list li p.tip{ color:#999; font-size:0.25rem; margin-top:0.1rem;}
+.infomation_newslist .wrapper .list li p.tip .time{ float:right; }
